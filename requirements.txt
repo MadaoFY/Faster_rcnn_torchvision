@@ -1,0 +1,14 @@
+PyYAML
+albumentations
+pycocotools>=2.0.2    # pip install pycocotools-windows
+tqdm>=4.64.0
+numpy>=1.21.0
+opencv-python>=4.1.1
+torch>=1.10.2+cu113
+torchvision>=0.11.3
+
+# Export --------------------------------------
+onnx>=1.9.0  # ONNX export
+
+# infer ----------------------------------------
+onnxruntime-gpu
