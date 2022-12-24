@@ -101,15 +101,15 @@ if __name__ == "__main__":
 
     # 获取测试集文件名，这里用voc2007作为测试集，测试集文件信息记录在test.txt里，因此需要从中读取
     test_list = []
-    with open('../voc/voc2007/test.txt') as f:
+    with open('./voc2007/test.txt') as f:
         for i in f:
             test_list.append(i.strip() + '.xml')
 
     # 测试集目标框文件的目录
-    xml_dir = '../voc/voc2007/Annotations'
+    xml_dir = './voc2007/Annotations'
 
     # 转换后文件的保存地址
-    json_dir = '../voc/voc2007/test_ann.json'
+    json_dir = './voc2007/test_ann.json'
 
     # 进行转换
     xml2coco(test_list, xml_dir, json_dir, labels_voc)
