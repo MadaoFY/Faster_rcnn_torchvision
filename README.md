@@ -1,0 +1,2 @@
+# Faster_rcnn_torchvision
+只是用来记录跑通torchvision的faster_rcnn用到的代码
