@@ -10,9 +10,12 @@ cd classification_pytorch
 pip install -r requirements.txt  # install
 ```
 ### 数据集下载
+我提供的数据集已经完成了清洗，训练集、验证集为voc2012，测试集为voc2007的测试集。
 voc2012(训练集、验证集)：
 voc2007(测试集)：
-voc(未经清洗)：https://pjreddie.com/projects/pascal-voc-dataset-mirror/
+若你想获取未经清洗的voc  
+voc(未经清洗)：https://pjreddie.com/projects/pascal-voc-dataset-mirror/  
+数据集讲解(来自b站up主：霹雳吧啦Wz)：https://www.bilibili.com/video/BV1kV411k7D8/?spm_id_from=333.999.0.0&vd_source=23508829e27bce925740f90e5cd28cf3
 
 ## 使用演示
 ### 训练(```train_rcnn.py```)
