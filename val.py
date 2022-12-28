@@ -125,12 +125,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
 
     # 权重
-    parser.add_argument('--weights', default='../voc/models_save/faster_rcnn_model_7_57.726.pth',
+    parser.add_argument('--weights', default='./models_save/faster_rcnn_model_7_57.726.pth',
                         help='模型文件地址; pth,pt,onnx模型')
     # 推理所需图片的根目录
-    parser.add_argument('--img_dir', default='../voc/voc2007/JPEGImages/', help='训练所用图片根目录')
+    parser.add_argument('--img_dir', default='./voc2007/JPEGImages/', help='训练所用图片根目录')
     # 验证集
-    parser.add_argument('--val_dir', default='../voc/voc2007/test_ann.json', help='验证集文档')
+    parser.add_argument('--val_dir', default='./voc2007/test_ann.json', help='验证集文档')
     # batch_size
     parser.add_argument('--batch_size', type=int, default=1, metavar='N', help='batch size when training')
     # 数据集分类数量

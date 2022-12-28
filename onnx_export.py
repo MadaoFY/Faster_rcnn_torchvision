@@ -18,7 +18,7 @@ def get_faster_rcnn_model(num_classes, in_channels=3, pretrained=True):
 
 if __name__ == '__main__':
 
-    root = '../voc/'
+    root = '../Faster_rcnn_torchvision/'
     model_dir = os.path.join(root, 'models_save/faster_rcnn_model_7_57.726')
 
     x = torch.randn(1, 3, 800, 800, requires_grad=True)

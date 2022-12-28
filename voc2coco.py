@@ -97,7 +97,7 @@ if __name__ == "__main__":
     """以测试集转换为例子"""
 
     # 获取目标类别，用于最后的格式转换
-    labels_voc = get_voc_labels_from_yaml('../voc/labels_voc.yaml')
+    labels_voc = get_voc_labels_from_yaml('./labels_voc.yaml')
 
     # 获取测试集文件名，这里用voc2007作为测试集，测试集文件信息记录在test.txt里，因此需要从中读取
     test_list = []

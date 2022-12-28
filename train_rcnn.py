@@ -127,17 +127,17 @@ if __name__ == "__main__":
     # 训练设备类型
     parser.add_argument('--device', default='cuda', help='训练设备类型')
     # 训练所需图片的根目录
-    parser.add_argument('--img_dir', default='../voc/voc2012/JPEGImages/', help='训练所用图片根目录')
+    parser.add_argument('--img_dir', default='./voc2012/JPEGImages/', help='训练所用图片根目录')
     # 训练集
-    parser.add_argument('--train_dir', default='../voc/voc2012/train_ann.json', help='训练集文档')
+    parser.add_argument('--train_dir', default='./voc2012/train_ann.json', help='训练集文档')
     # 验证集
-    parser.add_argument('--valid_dir', default='../voc/voc2012/val_ann.json', help='测试集文档')
+    parser.add_argument('--valid_dir', default='./voc2012/val_ann.json', help='测试集文档')
     # 载入coco预训练权重
     parser.add_argument('--pretrain_coco', default=True, help='预训练权重')
     # 训练信息保存位置
     parser.add_argument('--log_save_dir', default=None, help='tensorboard信息保存地址')
     # 模型权重保存位置
-    parser.add_argument('--model_save_dir', default='../voc/models_save/faster_rcnn_model',
+    parser.add_argument('--model_save_dir', default='./models_save/faster_rcnn_model',
                         help='模型权重保存位置')
     # 学习率
     parser.add_argument('--lr', type=float, default=0.0001,
