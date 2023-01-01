@@ -11,8 +11,10 @@ pip install -r requirements.txt  # install
 ```
 ### 数据集下载
 我这里已经完成清洗的voc数据集。  
-voc2012(训练集、验证集)：https://pan.baidu.com/s/17QaTm_xeAxKE0z9AQYS7Ug  
-voc2007(测试集)：https://pan.baidu.com/s/1GV759EbR-wiZMi0vxJih4w
+voc2012(训练集、验证集)：https://pan.baidu.com/s/1rICWiczIv_GyrYIrEj1p3Q  
+提取码: 4pgx  
+voc2007(测试集)：https://pan.baidu.com/s/1uZ1D53STUPmhXIaQ7Ce4hw  
+提取码: vp5z
 
 若你想获取原始未经清洗的voc  
 voc：https://pjreddie.com/projects/pascal-voc-dataset-mirror/  
