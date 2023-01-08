@@ -64,7 +64,7 @@ def train_detection(
         gpu='cuda',
         fp16=True
 ):
-    if log_save_dir:
+    if log_save_dir is not None:
         writer = SummaryWriter(log_save_dir)
 
     best_map50 = 0.0
@@ -173,7 +173,7 @@ def train_detection(
         coco_evaluator.summarize()
         val_map50 = coco_evaluator.stats[0] * 100
 
-        if log_save_dir:
+        if log_save_dir is not None:
             writer.add_scalar('loss_total', train_loss, global_step=epoch)
             writer.add_scalars('loss_reg_cls',
                                {k: v for k, v in zip(loss_keys, loss_values)},
@@ -194,5 +194,6 @@ def train_detection(
         if epoch in model_save_epochs:
             torch.save(model.state_dict(), model_save_dir + f'_{epoch}_{val_map50:.3f}.pth')
             print(f'saving model with epoch {epoch}')
-    writer.close()
+    if log_save_dir is not None:
+        writer.close()
     print(f'Done!!!best map0.5:0.95 = {best_map50:.3f}')
