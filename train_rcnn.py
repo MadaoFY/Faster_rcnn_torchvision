@@ -112,7 +112,7 @@ def main(args):
         model_save_dir,
         log_save_dir=args.log_save_dir,
         model_save_epochs=args.model_save_epochs,
-        gpu=args.device,
+        device=args.device,
         fp16=fp16
     )
     print(f'{epochs} epochs completed in {(time.time() - start) / 3600.:.3f} hours.')

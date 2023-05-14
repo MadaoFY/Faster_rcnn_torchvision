@@ -61,7 +61,7 @@ def train_detection(
         model_save_dir,
         log_save_dir,
         model_save_epochs=None,
-        gpu='cuda',
+        device='cuda',
         fp16=True
 ):
     if log_save_dir is not None:
@@ -69,7 +69,7 @@ def train_detection(
 
     best_map50 = 0.0
     coco_true = COCO(annotation_file=val_loader.dataset.ann_dir)
-    device = torch.device(gpu) if torch.cuda.is_available() else torch.device('cpu')
+    device = torch.device(device) if torch.cuda.is_available() else torch.device('cpu')
     model = model.to(device)
 
     if fp16:
